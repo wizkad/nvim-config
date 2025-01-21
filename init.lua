@@ -57,6 +57,8 @@ keymap('n', '<leader>l', '<cmd>Lazy<CR>', {desc = 'Open Lazy plugin manager'})
 keymap('n', '<leader>m', '<cmd>Mason<CR>', {desc = 'Open Mason LSP manager'})
 keymap('n', '<leader>dm', '<cmd>MarkdownPreview<CR>', {desc = '[D]ocument Markdown preview'})
 keymap('n', '<leader>tt', '<cmd>Floaterminal<CR>', {desc = 'Open floating terminal'})
+keymap('n', '<leader>th', '<cmd>ToggleTerm size=10 direction=horizontal<CR>', {desc = 'Open horizontal terminal'})
+keymap('n', '<leader>tv', '<cmd>ToggleTerm size=30 direction=vertical<CR>', {desc = 'Open horizontal terminal'})
 keymap({ 'n', 'x' }, 's', '<Nop>')
 
 -- AUTOCOMANDS
@@ -89,4 +91,6 @@ vim.opt.rtp:prepend(lazypath)
 require('lazy').setup({
 	{ import = 'plugins' },
 })
+
+
 
